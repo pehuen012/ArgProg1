@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    background-image:url("img/456536.jpg");
+}
+header{
+    background-color: black;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.logos{
+    display: flex;
+    align-items: center;
+    margin: 0%;
+}
+
+.logos img{
+    margin-right: 10px;
+}
+
+h7{
+    color: white;
+
+}
+
+
+h1{
+    color:red;
+    margin-left: 30;
+}
