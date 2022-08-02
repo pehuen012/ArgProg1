@@ -3,62 +3,81 @@
         <head>
             <meta charset="UTF-8" />
             <title> Portafolio Pehuen </title>
-            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="css/bootstrap.min.css">
         </head>
         <body>
-            <header>
-                <a href="#" class="logos">
-                    <img src="img/logo.png" alt="LogoMio">
-                    <h7>Pehuen Martínez</h7>
-                </a>
-                <nav>
-                    <a href="" class="nav-link">Proyectos</a>
-                    <a href="" class="nav-link">Habilidades</a>
-                    <a href="" class="nav-link">Contacto</a>
-                    <a href="" class="nav-link">Sobre mi</a>
-                </nav>
-            </header>
-            <section>
-                <article class="yo">
-                    <p><strong>HOLA!!</strong> Me llamo Pehuen Camilo Martínez, soy de Argentina, me encuentro viviendo y estudiando en La Plata. Me gusta
-                    la mucho la programacion y entender como es el trasfondo de lo que vemos normalmente cuando recorremos internet. </p>
-                    <img src="img/perfil.jpeg" alt="Foto de perfil" width="" height="">
-                </article>
-            </section>
-            <section>
-                <h1>
-                    <b>Proyectos</b>
-                </h1>
-                <article class="proyectos">
-                    <h3>
-                        MiPortafolio
-                    </h3>
-                </article>
-            </section>
-            <section>
-                <h1>
-                    <b>Habilidades</b>
-                </h1>
-                <article>
-                    <ul>
-                        <li>JavaScrip</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>MySQL</li>
-                    </ul>
-                </article>
-            </section>
-            <footer>
-                <h3>
-                    Informacion de contacto
-                </h3>
-                <ul>
-                    <li><a href="pehuenco16@hotmail.com">Enviame un mensaje</a></li>
-                    <li></li><a href="#">Instagram</a></li>
-                    <li></li><a href="#">Outlook</a></li>
-                    <li></li><a href="#">LinKedin</a></li>
-                 </ul>
-                
+            <!--<header class="container-fluid">
+            </header>-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0" id="SobreMi">
+                <div class="container-fluid p-0 pe-4">
+                    <a class="navbar-brand " href="#">
+                        <img src="img/logo.png" alt="LogoMio" width="50" height="60" class="d-inline-block align-text-bottom">
+                        <h6 class="d-inline-block my-0 text-secondary">Pehuen Martínez</h6>
+                    </a>
+                    <button class="navbar-toggler mx-4 px-1 border-0" type="button" >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" >
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a href="#SobreMi" class="nav-link px-4 active">Sobre mi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Proyectos" class="nav-link px-4">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Habilidades" class="nav-link px-4">Habilidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Contacto" class="nav-link px-4">Contacto</a>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+                 
+            </nav> 
+            <div class="container-fluid p-5" style="background-image: url('img/daniel-leone-v7daTKlZzaw-unsplash.jpg');">
+                <section class="row container-fluid justify-content-end p-0 mx-0">
+                    <article class="row col-sm-12 col-lg-7 justify-content-end bg-light bg-opacity-50 p-0 mx-0 mb-5 mt-3 rounded-4">
+                        <p class="col-lg-7 col-sm-12 m-0 p-4"><strong>HOLA!!</strong> Me llamo Pehuen Camilo Martínez, soy de Argentina, me encuentro viviendo y estudiando en La Plata. Me gusta
+                        la mucho la programacion y entender como es el trasfondo de lo que vemos normalmente cuando recorremos internet. Me encanta aprender por mi cuenta. </p>
+                        <div class="col-lg-5 col-sm-6 container-fluid m-0 p-4"><img class="rounded-3" src="img/perfil.jpeg" alt="Foto de perfil" width="100%"></div>
+                    </article>
+                </section>
+                <section class="" id="Proyectos">
+                    <h1 class="p-0 my-5 display-1">
+                        <b>Mis proyectos</b>
+                    </h1>
+                    <article class="row container-fluid bg-light bg-opacity-50 p-0 mx-0 my-4 rounded-4">
+                        <h3 class="p-4">
+                            MiPortafolio
+                        </h3>
+                    </article>
+                </section>
+                <section class="" id="Habilidades">
+                    <h1>
+                        <b>Habilidades</b>
+                    </h1>
+                    <article>
+                        <div><img src="img/java.jpg" alt="Logo JavaScript"><p>JavaScript</p></div>
+                        <div><img src="img/html.png" alt="Logo HTML"><p>HTML</p></div>
+                        <div><img src="img/css.png" alt="Logo CSS"><p>CSS</p></div>
+                        <div><img src="img/mysql.png" alt="Logo MySQL"><p>MySQL</p></div>
+                    </article>
+                </section>
+            </div>           
+            <footer id="Contacto">
+                <a href="pehuenco16@hotmail.com">Enviame un mensaje</a>
+                <div>
+                    <div>
+                        <p>instagram</p>
+                        <p>Oultlook</p>
+                        <p>Linkedin</p>
+                    </div>
+                     <img src="img/logo.png" alt="LogoMio">
+                </div>
             </footer>
+            
+            <script src="js/bootstrap.bundle.min.js"></script>
         </body>
     </html>
