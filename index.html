@@ -3,7 +3,9 @@
         <head>
             <meta charset="UTF-8" />
             <title> Portafolio Pehuen </title>
+            <link rel="stylesheet" href="style.css">
             <link rel="stylesheet" href="css/bootstrap.min.css">
+            <script src="script.js" defer></script>
         </head>
         <body id="SobreMi">
             <!--<header class="container-fluid">
@@ -14,43 +16,45 @@
                         <img src="img/logo.png" alt="LogoMio" width="50" height="60" class="d-inline-block align-text-bottom">
                         <h6 class="d-inline-block my-0 text-secondary">Pehuen Martínez</h6>
                     </a>
-                    <button class="navbar-toggler mx-4 px-1 border-0" type="button" >
+                    <button class="navbar-toggler mx-4 px-1 border-0" type="button" onclick="barraAparece()">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" >
+                    <div class="navbar-collapse" id="navegacion" style="display: none">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a href="#SobreMi" class="nav-link px-4">Sobre mi</a>
+                                <a href="#SobreMi" class="nav-link px-4 py-3">Sobre mi</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#Proyectos" class="nav-link px-4">Proyectos</a>
+                                <a href="#Proyectos" class="nav-link px-4 py-3">Proyectos</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#Habilidades" class="nav-link px-4">Habilidades</a>
+                                <a href="#Habilidades" class="nav-link px-4 py-3">Habilidades</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#Contacto" class="nav-link px-4">Contacto</a>
+                                <a href="#Contacto" class="nav-link px-4 py-3">Contacto</a>
                             </li>
                         </ul>
                     </div> 
                 </div>
                  
             </nav> 
-            <div class="container-fluid p-5" style="background-image: url('img/daniel-leone-v7daTKlZzaw-unsplash.jpg');">
-                <section class="row justify-content-end p-0 m-0 pt-4 mt-5">
-                    <article class="col-md-12 col-lg-7 justify-content-end d-xl-flex bg-light bg-opacity-50 p-0 mx-0 rounded-5">
-                        <h5 class="m-0 p-xl-4 pe-xl-0 p-4 pb-0 container-fluid d-flex align-items-center justify-content-center text-center fw-bolder text-dark text-opacity-75" style="font-size: 1.4rem;">¡¡HOLA!! Me llamo Pehuen Camilo Martínez, soy de Argentina, me encuentro viviendo y estudiando en La Plata. Me gusta
-                        la mucho la programacion y entender como es el trasfondo de lo que vemos normalmente cuando recorremos internet. Me encanta aprender por mi cuenta. </h5>
-                        <div class="container-fluid m-0 p-xl-4 p-5 d-flex align-items-center"><img class="rounded-circle img-fluid" src="img/perfil.jpeg" alt="Foto de perfil"></div>
-                    </article>
-                </section>
-                <section class="" id="Proyectos">
-                    <h1 class="p-0 py-5 m-0 display-1" style="font-size: 5rem;">
-                        <b>Mis proyectos</b>
+            <main class="container-fluid p-0" style="background-image: url('img/fondo.jpg'); background-attachment: fixed; align-items: center;">
+                <div class="p-5 pb-auto">
+                    <section class="row justify-content-end p-0 py-5 m-0 my-5">
+                        <article class="col-md-12 col-lg-7 justify-content-end d-xl-flex bg-light bg-opacity-50 p-0 mx-0 rounded-5">
+                            <h5 class="m-0 p-xl-4 pe-xl-0 p-4 pb-0 container-fluid d-flex align-items-center justify-content-center text-center fw-bolder text-dark text-opacity-75" style="font-size: 1.4rem;">¡¡HOLA!! Me llamo Pehuen Camilo Martínez, soy de Argentina, me encuentro viviendo y estudiando en la ciudad de La Plata. Me gusta
+                            mucho la programación y entender cómo es el trasfondo de lo que vemos comunmente cuando recorremos la web. Me encanta aprender por mi cuenta y hacer cursos que aporten a mi formación como desarrollador. </h5>
+                            <div class="container-fluid m-0 p-xl-4 p-5 d-flex align-items-center"><img class="rounded-circle img-fluid" src="img/perfil.jpeg" alt="Foto de perfil"></div>
+                        </article>
+                    </section>
+                </div>
+                <section class="p-5" id="Proyectos">
+                    <h1  class="m-0 display-1 p-0" style="font-size: 5rem;">
+                        <b class="oculto derecha aparecer">Mis proyectos</b>
                     </h1>
-                    <article class="row container-fluid bg-light bg-opacity-50 p-4 mx-0 mb-5 rounded-4 ">
+                    <article class="row container-fluid bg-light bg-opacity-50 p-4 mx-0 my-5 rounded-4 ">
                         <div class="col-md-6 col-12 px-3 py-4">
-                            <a class="card p-0 border-0 text-decoration-none text-secondary" href="http://www.youtube.com">
+                            <a class="proyectos card p-0 border-0 text-decoration-none text-secondary" onmouseover="boton(0,'shadow-lg','proyectos')" onmouseout="boton(0,'shadow-lg','proyectos')" href="http://www.youtube.com">
                                 <img src="img/youtube.png" class="card-img-top img-fluid pt-3" alt="MiPortafolio">
                                 <div class="card-body">
                                   <h5 class="card-title">MiPortafolio</h5>
@@ -59,7 +63,7 @@
                             </a>
                         </div>
                         <div class="col-md-6 col-12 px-3 py-4">
-                            <a class="card p-0 border-0 text-decoration-none text-secondary" href="http://www.youtube.com">
+                            <a class="proyectos card p-0 border-0 text-decoration-none text-secondary" onmouseover="boton(1,'shadow-lg','proyectos')" onmouseout="boton(1,'shadow-lg','proyectos')" href="http://www.youtube.com">
                                 <img src="img/youtube.png" class="card-img-top img-fluid pt-3" alt="MiPortafolio">
                                 <div class="card-body">
                                   <h5 class="card-title">MiPortafolio</h5>
@@ -69,36 +73,36 @@
                         </div>
                     </article>
                 </section>
-                <section class="" id="Habilidades">
-                    <h1 class="py-5 m-0 display-1" style="font-size: 5rem;">
-                        <b>Habilidades</b>
+                <section class="py-5" id="Habilidades">
+                    <h1 class="m-0 display-1 ps-5" style="font-size: 5rem;">
+                        <b class="oculto derecha aparecer">Habilidades</b>
                     </h1>
-                    <article class="container-fluid row d-flex align-items-end bg-dark bg-opacity-50 d-flex p-0 m-0 mb-5">
-                        <div class="p-5 col"><img class="img-fluid" src="img/java.jpg" alt="Logo JavaScript" width="100%"><p class="m-0 text-light d-flex justify-content-center my-2">JavaScript</p></div>
-                        <div class="p-5 col"><img class="img-fluid" src="img/html.png" alt="Logo HTML" width="100%"><p class="m-0 text-light d-flex justify-content-center my-2">HTML</p></div>
-                        <div class="p-5 col"><img class="img-fluid" src="img/css.png" alt="Logo CSS" width="100%"><p class="m-0 text-light d-flex justify-content-center my-2">CSS</p></div>
-                        <div class="p-5 col"><img class="img-fluid mb-3" src="img/bootstrap.png" alt="Logo CSS" width="100%"><p class="m-0 text-light d-flex justify-content-center my-2">Bootstrap</p></div>
-                        <div class="p-5 col"><img class="img-fluid" src="img/mysql.png" alt="Logo MySQL" width="100%"><p class="m-0 text-light d-flex justify-content-center my-2">MySQL</p></div>
+                    <article class="container-fluid row d-flex align-items-end bg-dark bg-opacity-50 d-flex p-0 m-0 my-5">
+                        <div class="p-5 col-md-2 col-6"><img class="img-fluid oculto abajo aparecer" src="img/java.jpg" alt="Logo JavaScript" width="100%"><p class="habilidades m-0 text-light d-flex justify-content-center my-2 rounded-2">JavaScript</p></div>
+                        <div class="p-5 col-md-2 col-6"><img class="img-fluid oculto abajo aparecer" src="img/html.png" alt="Logo HTML" width="100%"><p class="habilidades m-0 text-light d-flex justify-content-center my-2 rounded-2">HTML</p></div>
+                        <div class="p-5 col-md-2 col-6"><img class="img-fluid oculto abajo aparecer" src="img/css.png" alt="Logo CSS" width="100%"><p class="habilidades m-0 text-light d-flex justify-content-center my-2 rounded-2">CSS</p></div>
+                        <div class="p-5 col-md-2 col-6"><img class="img-fluid oculto abajo aparecer pb-3 " src="img/bootstrap.png" alt="Logo CSS" width="100%"><p class="habilidades m-0 text-light d-flex justify-content-center my-2 rounded-2">Bootstrap</p></div>
+                        <div class="p-5 col-md-2 col-6"><img class="img-fluid oculto abajo aparecer" src="img/mysql.png" alt="Logo MySQL" width="100%"><p class="habilidades m-0 text-light d-flex justify-content-center my-2 rounded-2">MySQL</p></div>
                     </article>
                 </section>
-            </div>           
+            </main>           
             <footer class="container-fluid " id="Contacto">
                 <div class="row bg-dark d-flex justify-content-between py-3 px-5">
                     <div class="col-xs-12 col-lg-5 p-0 justify-content-end">
                         <label for="imputMail" class="text-secondary fw-bolder fs-5">Envíame un mensaje</label>
                         <input type="email" class="form-control bg-light bg-opacity-50 border-0 my-4" placeholder="Ingresar email">
                         <textarea class="form-control bg-light bg-opacity-50 border-0 my-4" rows="4" placeholder="Ingresar mensaje"></textarea>
-                        <button type="submit" class="btn d-flex ms-auto btn-dark my-4">Enviar</button>
+                        <button type="submit" class="botForm d-flex ms-auto my-4 border-0" onclick="boton(0,'bg-dark','botForm')">Enviar</button>
                     </div>  
                     <div class="col-xs-12 col-lg-4 d-flex align-items-center justify-content-end p-0" >
                         <ul class="p-0 m-0">
-                            <li class="py-4">
-                                <a href="https://www.instagram.com/pehuen_m_/" class="text-decoration-none text-secondary d-flex justify-content-end"><span class="mx-3 te">pehuen_m_</span><img class="img-fluid" src="img/instagram.png" alt="Logo LinKedin" width="30px" height="30px"></a>
+                            <li class="seleccion my-4 py-2 px-4 container-fluid rounded-2" onmouseover="boton(0,'bg-light','seleccion')" onmouseout="boton(0,'bg-light','seleccion')">
+                                <a href="https://www.instagram.com/pehuen_m_/" class="text-decoration-none text-secondary d-flex justify-content-end"><span class="mx-3 te">pehuen_m_</span><img class="img-fluid" src="img/instagram.png" alt="Logo instagram" width="30px" height="30px"></a>
                             </li>
-                            <li class="py-4">
-                                <a href="" class="text-decoration-none text-secondary d-flex justify-content-end"><span class="mx-3">pehuenco16@hotmail.com</span><img class="img-fluid" src="img/outlook.png" alt="Logo LinKedin" width="30px" height="30px"></a>
+                            <li class="seleccion my-4 py-2 px-4 container-fluid rounded-2" onmouseover="boton(1,'bg-light','seleccion')" onmouseout="boton(1,'bg-light','seleccion')">
+                                <a href="" class="text-decoration-none text-secondary d-flex justify-content-end"><span class="mx-3">pehuenco16@hotmail.com</span><img class="img-fluid" src="img/outlook.png" alt="Logo email" width="30px" height="30px"></a>
                             </li>
-                            <li class="py-4"> 
+                            <li class="seleccion my-4 py-2 px-4 container-fluid rounded-2" onmouseover="boton(2,'bg-light','seleccion')" onmouseout="boton(2,'bg-light','seleccion')"> 
                                 <a href="" class="text-decoration-none text-secondary d-flex justify-content-end"><span class="mx-3">LinKedin</span><img class="img-fluid" src="img/linkedin.png" alt="Logo LinKedin" width="30px" height="30px"></a>
                             </li>
                         </ul>

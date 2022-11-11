@@ -1,131 +1,45 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-image:url("img/daniel-leone-v7daTKlZzaw-unsplash.jpg");
-    background-attachment: fixed;
-    background-size:cover;
+
+.abajo {
+    transform: translatey(30px);
 }
-/**
-estructura header
-*/
-header{
-    background-color: rgb(27, 27, 27);
-    display: flex;
-    height: 70px;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 25px;
+
+.derecha {
+    margin-left: 70px;
 }
-/**
-estilos logo
-*/
-.logos{
-    display: flex;
-    align-items: flex-end;
+
+.oculto {
+    opacity: 0;
+    transition: .7s ease-in-out all;
+}
+
+
+.visible {
+    transform: translate(0px);
     margin: 0px;
+    opacity: 1;
 }
 
-.logos img{
-    width: 60px;
-}
-.logos h7{
-    color: rgb(207, 207, 207);
-    font-family: sans-serif;
-    font-size: 12;
-    padding-bottom: 6px;
-}
-/**
-estilos links
-*/
-.nav-link{
-    margin: 25px;
+    
+.logo {
+    box-shadow: 10px 5px 5px black;
 }
 
-a{
-    text-decoration: none;
-    color: white;
+.botForm {
+    background-color: rgb(33, 33, 33);
+    color: lightcyan;
 }
 
-:hover{
-    color: rgb(131, 131, 131);
+body::-webkit-scrollbar {
+    width: 12px;              /* width of the entire scrollbar */
 }
-/*
-estructura sobre mi
-*/
-.sobre-mi{
-    padding-left:  700px;
+  
+body::-webkit-scrollbar-track {
+    background: rgb(33, 33, 33);
 }
-.c-blancas{
-    display: flex;
-    background-color: rgba(96, 96, 96, 0.782);
-    border-radius: 30px;
-    margin: 50px;
-    border-color: rgba(0, 255, 255, 0.293);
-    border-style: solid;
-    border-width: 1px;
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 224, 224);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 4px solid rgb(33, 33, 33);  /* creates padding around scroll thumb */
+    opacity: 0;
 }
-.c-blancas p{
-    color: rgb(189, 189, 189);
-    margin: 30px 15px 30px 30px;
-    font-size: 25px;
-    text-align: justify;
-    font-family: sans-serif;
-}
-.c-blancas img{
-    width: 300px;
-    border-radius: 30px;
-    margin: 30px 30px 30px 10px;
-}
-/*
-estructura Proyectos
-*/
-
-h1{
-    color: rgb(240, 240, 240);
-    margin: 100px 0px 70px 50px;    
-    font-size: 80;
-
-}
-/*
-estructura habilidades
-*/
-.habilidades article{
-    background-color: rgb(27, 27, 27, 0.8);
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 100px 50px 50px;
-    margin-bottom: 100px;
-}
-.habilidades img{
-    width: 80px;
-    height: 80px;
-}
-.habilidades p{
-    color: rgb(187, 187, 187);
-    margin: 15px;
-    display: inline;
-}
-/*
-estructura contacto
-*/
-
-footer{
-    height: 250px;
-    border-color: rgba(0, 255, 255, 0.408);
-    border-width: 1px;
-    border-top-style: solid;
-    background-color: #272727;
-    margin-top: 0px;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 25px 0px 50px;
-}
-footer > div{
-    display: flex;
-}
-footer p{
-    color: rgb(187, 187, 187);
-}
-
-
